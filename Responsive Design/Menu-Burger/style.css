@@ -1,0 +1,40 @@
+ul.menu{
+    display: flex;
+    background-color:aliceblue;
+    padding: 5px;
+    justify-content: center;
+}
+
+ul.menu li{
+    list-style-type: none;
+    margin: 0 10px;
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+ul.menu li.logo{
+    margin-right: 50px;
+    height: 32px;
+}
+
+ul.menu li.logo img{
+    height: 32px;
+}
+
+@media screen and (max-width: 800px){
+    ul.menu{
+        flex-direction: column;
+    }
+    ul.menu li{
+        text-align: center;
+    }
+    ul.menu li.logo{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    ul.menu{
+        background-color: green;
+    }
+}

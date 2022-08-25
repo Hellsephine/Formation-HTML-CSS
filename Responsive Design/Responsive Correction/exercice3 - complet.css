@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input.navCheck{
+    display: none;
+}
+label.navLabel{
+    display: none;
+}
+.conteneur{
+    width: 100%
+}
+.conteneur ul.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+.conteneur ul li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.sous-menu{
+    display: none;
+    position:absolute;
+}
+/*
+    Le .sous-menu, dans un li survolé, 
+    qui est un enfant direct de la liste .menu
+*/
+ul.menu > li:hover .sous-menu{
+    display:block;
+}
+a{
+    color:cadetblue;
+    text-decoration: none;
+    font-size: 2rem;
+}
+@media screen and (max-width: 960px){
+    nav .conteneur .menu{
+        display:none
+    }
+    
+    nav .conteneur input.navCheck:checked + .menu{
+        display:flex;
+    }
+
+    label.navLabel{
+        display: block;
+    }
+
+    .conteneur ul{
+        flex-direction: column;
+    }
+    .sous-menu{
+        display: block;
+        position: static;
+    }
+}

@@ -1,0 +1,38 @@
+.col-50{
+	float: left;
+	width: 48%;
+	height: 50px;
+	margin: 1%;
+	text-align: center;
+}
+
+.col-25{
+	height: 50px;
+	text-align: center;
+}
+
+.red{
+	background-color: red;
+	width: 300px;
+}
+
+.blue{
+	background-color: blue;
+	width: 300px;
+}
+
+.yellow{
+	background-color: yellow;
+	width: 300px;
+}
+
+.green{
+	background-color: green;
+	width: 300px;
+}
+
+body{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}

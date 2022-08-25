@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="raw mt-3">
+            <div class="col-5 offset-3 border border-black p-3">
+                <strong>Quel type d'utilisateurs êtes vous ?</strong>
+                <div class="raw my-3 ">
+                    <div class="col-12">
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary mx-3 rounded-3" for="btnradio1">Débutant</label>
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-primary mx-3 rounded-3" for="btnradio2">Moyen</label>                       
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn btn-outline-primary mx-3 rounded-3" for="btnradio3">Confirmé</label>
+                        </div>
+                    </div>
+                </div>
+                <strong>Saisir vos identifiants</strong>
+                <div class="raw">
+                    <div class="col-12">
+                        <form>
+                            <div class="input-group">
+                                <span class="input-group-text" id="baic-addon3">Nom</span>
+                                <input type="text" class="form-control" placeholder="Jean Dupont" aria-label="Username" aria-describedby="basic-addon3">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text" id="baic-addon3">Email</span>
+                                <input type="text" class="form-control" placeholder="jean.dupont@gmail.com" aria-label="Username" aria-describedby="basic-addon3">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="baic-addon3">Mot de passe</span>
+                                <input type="text" class="form-control" placeholder="000000" aria-label="Username" aria-describedby="basic-addon3">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Je suis d'accord avec </label>
+                                <a href="#" class="text-decoration-none">les conditions d'utilisation</a>.
+                            </div>
+                            <button type="submit" class="btn btn-primary my-2">Créer un compte</button>
+                            <p>Vous avez déjà un compte ? <a href="#" class="text-decoration-none">Connectez-vous</a>.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

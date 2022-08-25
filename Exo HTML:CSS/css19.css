@@ -1,0 +1,34 @@
+body{
+    text-align: center;
+    background-color: #e0e2e8;
+}
+h1{
+    text-transform: uppercase
+}
+.c,.è{
+    color: #36a23e;
+    border-top:solid;
+    border-bottom:solid;
+}
+.é,.s{
+    color: #ff6633;
+    border-top:solid;
+    border-bottom:solid;
+}
+.r{
+    color: #cc0066;
+    border-top:solid;
+    border-bottom:solid;
+}
+a{
+    color :#36a23e;
+}
+.c{
+    border-left: solid;
+}
+.s{
+    border-right: solid;
+}
+.c,.é,.r,.è,.s{
+    padding:5px;
+}

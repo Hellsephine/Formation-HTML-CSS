@@ -1,0 +1,53 @@
+body{
+    background-image: url("https://64.media.tumblr.com/d5241575957089ba6a2de5f8e35a76c8/tumblr_p444157oGm1vxnjybo1_1280.gifv");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b{
+    background-color: darkgray;
+    text-align: center;
+}
+
+.buns{
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.ingredient{
+    background-color:darkkhaki;
+    width: 18%;
+    margin:1%;
+    height: 2%;
+}
+
+.p{
+    background-color: darkolivegreen;
+    text-align: center;
+}
+
+@media screen and (min-width: 780px) and (max-width: 920px){
+    .ingredient{
+        width: 45%;
+    }
+    .buns{
+        align-content: flex-end;
+
+    }
+    .ingredient:first-child{
+        flex-basis: 90%;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .buns{
+        flex-flow: column wrap;
+    }
+    .ingredient{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+}

@@ -1,0 +1,24 @@
+.conteneur{
+    width: 100%
+}
+
+.conteneur ul{
+    display: flex;
+}
+.conteneur ul li {
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+a{
+    color:cadetblue;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 960px){
+    .conteneur ul{
+        flex-direction: column;
+    }
+}

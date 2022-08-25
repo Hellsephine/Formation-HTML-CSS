@@ -1,0 +1,39 @@
+.row{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin:1%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.col-50{
+	border: 1px solid black;
+	height: 50px;
+	text-align: center;
+	width: 650px;
+}
+
+.col-25{
+	border: 1px solid black;
+	height: 50px;
+	text-align: center;
+	width: 300px;
+}
+
+.red{
+	background-color: red;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.yellow{
+	background-color: yellow;
+}
+
+.green{
+	background-color: green;
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 23%;
+    text-align: center;
+    margin: 1%;
+    border: darkgrey 1px solid;
+    padding: 1%;
+    box-shadow: 0px 0px 15px rgba(00, 00, 00, 0.3);
+    border-radius: 5px;
+}
+.card.active{
+    background: firebrick;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(00, 00, 00, 0.6);
+}
+.card h3, .card .price, .card ul{
+    margin-bottom: 1.5rem;
+}
+.card .price, .card h3{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card .price .euro{
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+.card ul li{
+    list-style-type: none;
+    padding: 0.5rem;
+}
+.card ul li:not(:last-child){
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.card .link{
+    background-color:firebrick;
+    border-radius: 25px;
+    padding: 0.5rem;
+}
+.card .link a{
+    line-height: 32px;
+    color: white;
+    text-decoration: none;
+}
+.card.active .link{
+    background: white;
+}
+.card.active .link a{
+    color: black;
+}
+.card .link a img{
+    vertical-align: middle;
+    width: 32px;
+}
+@media screen and (width < 780px){
+    .card{
+        width: 48%;
+    }
+}
+@media screen and (width < 578px){
+    .card{
+        width: 98%;
+    }
+}

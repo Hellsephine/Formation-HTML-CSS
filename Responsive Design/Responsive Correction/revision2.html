@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+                
+            var str = "Tu l'as trop ecrase, Cesar, ce port-salut";
+            var strT = ["C", "o", "u", "c", "o", "u", " ", "p", "e"];
+
+            var skipChar = [" ", ",", "'", "-"]
+
+            var palindrome = true;
+            var skipj = 0;
+
+            for(var i = 0; i < str.length; i++){
+                    // i => 0, 1, 2, 3, 4
+
+                    // j => 5, 4, 3, 2, 1
+                    // j => 4, 3, 2, 1, 0
+
+                    j = str.length - i - 1 + skipj;
+
+                    
+                    while(skipChar.includes(str.charAt(i))){
+                        i++;
+                    }
+                    while(skipChar.includes(str.charAt(j))){
+                        j--;
+                        skipj--;
+                    }
+
+                    console.log(str.charAt(i)+str.charAt(j));
+                    if(str.charAt(i).toLowerCase() != str.charAt(j).toLowerCase())
+                        palindrome = false;
+
+            }
+
+            if(palindrome)
+                console.log("C'est un palindrome !");
+            else
+                console.log("Ce n'est pas un palindrome !");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteneur{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.prix{
+    border: 1px black solid;
+    box-sizing: border-box;
+    border-radius: 5%;
+    margin: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 15px #000000;
+}
+
+.b{
+    border-radius: 25px;
+    background-color: firebrick;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px){
+    .prix{
+        width: 45%;
+    }
+    .conteneur{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .prix{
+        width: 20%;
+    }
+    .conteneur{
+        flex-direction: row;
+    }
+}

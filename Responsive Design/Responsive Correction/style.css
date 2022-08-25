@@ -1,0 +1,16 @@
+html[lang=fr] p {
+    display: none;
+}
+
+/*
+.hidden{
+    display: none;
+}
+*/
+.hidden:nth-child(3n+1){
+    background: red;
+}
+
+.hidden{
+    display: none;
+}
